@@ -14,8 +14,8 @@
 
   <PropertyGroup>
     <NuGetExe>&quot;$(NuGetToolPath)&quot;</NuGetExe>
-    <NuGetBasePath>&quot;$(PackagesBasePath.TrimEnd('\'))&quot;</NuGetBasePath>
-    <NuGetOutputDirectory>&quot;$(PackagesOutDir.TrimEnd('\'))&quot;</NuGetOutputDirectory>
+    <NuGetBasePath>&quot;$(PackagesBasePath)&quot;</NuGetBasePath>
+    <NuGetOutputDirectory>&quot;$(PackagesOutDir)&quot;</NuGetOutputDirectory>
   </PropertyGroup>
 
   <Target Name="BuildPackages"

@@ -56,6 +56,10 @@
                      Condition="'$(_resolvedMscorlib)' != 'true' and '%(PossibleTargetFrameworks.Identity)' != '' and Exists('%(PossibleTargetFrameworks.Identity)mscorlib.dll')" />
     </ItemGroup>
   </Target>
+  
+  <PropertyGroup Condition="'$(NETCORE_MSBUILD_PATH)' != '' and '$(PORTABLE_TARGETS_PATH)' != ''">
+    <MSBuildExtensionsPath32>$(PORTABLE_TARGETS_PATH)</MSBuildExtensionsPath32>
+  </PropertyGroup>
 
   <Import Project="depProj.targets"
           Condition="'$(MSBuildProjectExtension)' == '.depproj'" />

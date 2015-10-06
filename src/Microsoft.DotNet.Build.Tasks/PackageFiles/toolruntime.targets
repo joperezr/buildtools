@@ -24,9 +24,12 @@
     <ToolHostCmd Condition="'$(COMPLUS_InstallRoot)' != ''">(set COMPLUS_InstallRoot=) &amp; $(ToolHostCmd)</ToolHostCmd>
   </PropertyGroup>
   
-  <Target Name="EnsureBuildToolsRuntime"
-      Inputs="$(BuildToolsSemaphore)"
-      Outputs="$(ToolRuntimeSempahore)">
+  <Target Name="EnsureBuildToolsRuntime">
+    <Error Condition="!Exists('$(ToolRuntimeSempahore)')"
+           Text="The Tool Runtime directory [$(ToolRuntimePath)] does not exist. Please run $(SourceDir)Build.cmd to ensure the tools are installed before attempting to build an individual project." />
+  </Target>
+
+  <Target Name="RestoreToolRuntime">
 
     <!-- Restore tool runtime -->
     <Exec Command="$(DnuRestoreCommand) &quot;$(ToolRuntimeProjectJson)&quot;" StandardOutputImportance="Low" CustomErrorRegularExpression="^Unable to locate .*" />
@@ -47,7 +50,7 @@
     <Copy 
       SourceFiles="@(ToolCopyLocal)" 
       DestinationFolder="$(ToolRuntimePath)" 
-      SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+      SkipUnchangedFiles="true"
       OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
       Retries="$(CopyRetryCount)"
       RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />

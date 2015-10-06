@@ -157,7 +157,7 @@
       <GenFacadesArgs>-partialFacadeAssemblyPath:"$(GenFacadesInputAssembly)"</GenFacadesArgs>
       <GenFacadesArgs>$(GenFacadesArgs) -contracts:"%(ResolvedMatchingContract.Identity)"</GenFacadesArgs>
       <GenFacadesArgs>$(GenFacadesArgs) -seeds:"@(GenFacadesSeeds, ';')"</GenFacadesArgs>
-      <GenFacadesArgs>$(GenFacadesArgs) -facadePath:"$(GenFacadesOutputPath.TrimEnd('\'))"</GenFacadesArgs>
+      <GenFacadesArgs>$(GenFacadesArgs) -facadePath:"$(GenFacadesOutputPath)"</GenFacadesArgs>
       <GenFacadesArgs Condition="'$(DebugSymbols)' == 'false'">$(GenFacadesArgs) -producePdb:false</GenFacadesArgs>
       <GenFacadesArgs Condition="'@(SeedTypePreference)' != ''">$(GenFacadesArgs) -preferSeedType:"@(SeedTypePreference->'%(Identity)=%(Assembly)', ',')"</GenFacadesArgs>
     </PropertyGroup>

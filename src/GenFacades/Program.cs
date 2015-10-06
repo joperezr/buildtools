@@ -60,6 +60,9 @@ namespace GenFacades
 
             CommandLineTraceHandler.Enable();
 
+            facadePath = facadePath.Replace("/", "\\");
+            facadePath = facadePath.Replace("\"", "");
+
             if (!Directory.Exists(facadePath))
                 Directory.CreateDirectory(facadePath);
 
