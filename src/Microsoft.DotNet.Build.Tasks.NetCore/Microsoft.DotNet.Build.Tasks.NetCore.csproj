@@ -72,7 +72,7 @@
       </PublishedRuntimeItems>
 
       <PublishedRuntimeItems Include="@(None)">
-        <DestinationRelativePath>%(Filename)%(Extension)</DestinationRelativePath>
+        <DestinationRelativePath>%(FileName)%(Extension)</DestinationRelativePath>
       </PublishedRuntimeItems>
     </ItemGroup>
     <Copy SourceFiles="%(PublishedRuntimeItems.Identity)" DestinationFiles="$(Outdir)%(DestinationRelativePath)" SkipUnchangedFiles="true" />
