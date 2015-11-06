@@ -71,7 +71,7 @@
       </PublishedRuntimeItems>
     </ItemGroup>
     <Copy SourceFiles="%(PublishedRuntimeItems.Identity)" DestinationFiles="$(Outdir)%(DestinationRelativePath)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(PackageFiles)" DestinationFolder="$(OutputPath)\package\%(RecursiveDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(PackageFiles)" DestinationFolder="$(OutputPath)\PackageFiles\%(RecursiveDir)" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(NuProjFiles)" DestinationFolder="$(OutputPath)\NuProj\%(RecursiveDir)" SkipUnchangedFiles="true" />
   </Target>
 </Project>
