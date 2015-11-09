@@ -225,7 +225,6 @@ Global
 		{1BDEC722-8EF9-4AD9-BD52-172E4176D0B3}.Release|x64.Build.0 = Release|Any CPU
 		{1BDEC722-8EF9-4AD9-BD52-172E4176D0B3}.Release|x86.ActiveCfg = Release|Any CPU
 		{1BDEC722-8EF9-4AD9-BD52-172E4176D0B3}.Release|x86.Build.0 = Release|Any CPU
-<<<<<<< c82df126abccf9e83494c67ef029ab4a89d036ba
 		{F01FAA6C-4EF1-4283-B9B5-4C1416FA7F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F01FAA6C-4EF1-4283-B9B5-4C1416FA7F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F01FAA6C-4EF1-4283-B9B5-4C1416FA7F50}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -246,7 +245,6 @@ Global
 		{F01FAA6C-4EF1-4283-B9B5-4C1416FA7F50}.Release|x64.Build.0 = Release|Any CPU
 		{F01FAA6C-4EF1-4283-B9B5-4C1416FA7F50}.Release|x86.ActiveCfg = Release|Any CPU
 		{F01FAA6C-4EF1-4283-B9B5-4C1416FA7F50}.Release|x86.Build.0 = Release|Any CPU
-=======
 		{9AB674A0-AEF7-4539-8049-0406D2C7BB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9AB674A0-AEF7-4539-8049-0406D2C7BB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB674A0-AEF7-4539-8049-0406D2C7BB32}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -263,7 +261,6 @@ Global
 		{9AB674A0-AEF7-4539-8049-0406D2C7BB32}.Release|x64.ActiveCfg = Release|Any CPU
 		{9AB674A0-AEF7-4539-8049-0406D2C7BB32}.Release|x64.Build.0 = Release|Any CPU
 		{9AB674A0-AEF7-4539-8049-0406D2C7BB32}.Release|x86.ActiveCfg = Release|Any CPU
->>>>>>> Adding NetCore project to solution
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

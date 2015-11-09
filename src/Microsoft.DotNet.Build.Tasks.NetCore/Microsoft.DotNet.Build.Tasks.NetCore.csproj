@@ -11,8 +11,6 @@
     <CLSCompliant>false</CLSCompliant>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <SkipSigning>true</SkipSigning>
-    <!-- Microsoft.Build.* packages are built on .NetPortable Version 5.0 while BuildTools are built as .NetPortable v4.5, Profile7-->
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
   </PropertyGroup>
